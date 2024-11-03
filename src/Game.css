@@ -1,0 +1,90 @@
+/* src/ArkanTartys.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #c9f5fb;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  position: relative;
+  padding: 20px;
+}
+
+.game-title {
+  font-size: 36px;
+  color: #00796b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rope-container {
+  position: absolute;
+  /* display: flex; */
+  display: inline-flex;
+  width: 40%;
+  align-items: center;
+  left: 50%; /* Канат будет в центре */
+  transform: translateX(-50%); /* Центрируем канат по горизонтали */
+  transition: left 0.2s;
+}
+
+.rope {
+  width: 100%;
+  height: 10px;
+  background: #8b4513;
+}
+
+.player {
+  width: 50px;
+  height: 50px;
+}
+
+.center-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background: red;
+  transform: translate(-50%, -50%);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #00796b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.winner {
+  /* margin-top: 20px; */
+  position: absolute;
+  bottom: 20%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d32f2f; /* Цвет для текста победителя */
+}
