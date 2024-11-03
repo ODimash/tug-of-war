@@ -21,9 +21,9 @@ const Game = ({ playerNames }) => {
 
   const checkWinner = () => {
     if (ropePosition >= 50 + maxPosition) {
-      return `${playerNames.player1} Жеңді!`; // Player 1 Wins!
+      return `Жеңімпаз - ${playerNames.player1}!`; // Player 1 Wins!
     } else if (ropePosition <= 50 - maxPosition) {
-      return `${playerNames.player2} Жеңді!`; // Player 2 Wins!
+      return `Жеңімпаз - ${playerNames.player2}!`; // Player 2 Wins!
     }
     return null;
   };
@@ -50,10 +50,10 @@ const Game = ({ playerNames }) => {
       <div className="center-line" />
       <div className="controls">
         <button onClick={handlePullPlayer1} disabled={winner}>
-          {playerNames.player1} Тарту
+          {playerNames.player1}<br/>Тарту
         </button>
         <button onClick={handlePullPlayer2} disabled={winner}>
-          {playerNames.player2} Тарту
+          {playerNames.player2}<br/>Тарту
         </button>
       </div>
       {winner && <div className="winner">{winner}</div>}

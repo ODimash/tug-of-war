@@ -9,14 +9,11 @@ const App = () => {
   const [playerNames, setPlayerNames] = useState({ player1: '', player2: '' });
 
   return (
-    <Router>
-      <div className="app-container">
-        <Routes>
-          <Route path="/" element={<Home setPlayerNames={setPlayerNames} />} />
-          <Route path="/game" element={<Game playerNames={playerNames} />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="app-container">
+      {playerNames['player1'] === '' || playerNames['player2'] === ''
+        ? <Home setPlayerNames={setPlayerNames} />
+        : <Game playerNames={playerNames} />}
+    </div>
   );
 };
 

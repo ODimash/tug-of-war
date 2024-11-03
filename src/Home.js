@@ -6,21 +6,19 @@ import './Home.css';
 const Home = ({ setPlayerNames }) => {
   const [player1, setPlayer1] = useState('');
   const [player2, setPlayer2] = useState('');
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setPlayerNames({ player1, player2 });
-    navigate('/game');
   };
 
   return (
     <div className="home-container">
-      <h1>Добро пожаловать в Арқан тартыс!</h1>
+      <h1>«Арқан тартыс» интеллектуалды сайысы</h1>
       <img src="tug-of-war.png" alt="Tug of War" className="home-image" />
       <form className="player-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="player1">Имя игрока 1:</label>
+          <label htmlFor="player1">1-ші ойыншы:</label>
           <input
             type="text"
             id="player1"
@@ -30,7 +28,7 @@ const Home = ({ setPlayerNames }) => {
           />
         </div>
         <div>
-          <label htmlFor="player2">Имя игрока 2:</label>
+          <label htmlFor="player2">2-ші ойыншы:</label>
           <input
             type="text"
             id="player2"
@@ -39,7 +37,7 @@ const Home = ({ setPlayerNames }) => {
             required
           />
         </div>
-        <button style={{marginTop: 20}} type="submit">Начать игру</button>
+        <button style={{marginTop: 20}} type="submit">Сайысты бастау</button>
       </form>
     </div>
   );
