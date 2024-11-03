@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tug-of-war/static/css/main.1692488c.css",
-    "main.js": "/tug-of-war/static/js/main.af96439d.js",
+    "main.js": "/tug-of-war/static/js/main.dc4c77a7.js",
     "static/js/453.b32f9add.chunk.js": "/tug-of-war/static/js/453.b32f9add.chunk.js",
     "index.html": "/tug-of-war/index.html",
     "main.1692488c.css.map": "/tug-of-war/static/css/main.1692488c.css.map",
-    "main.af96439d.js.map": "/tug-of-war/static/js/main.af96439d.js.map",
+    "main.dc4c77a7.js.map": "/tug-of-war/static/js/main.dc4c77a7.js.map",
     "453.b32f9add.chunk.js.map": "/tug-of-war/static/js/453.b32f9add.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1692488c.css",
-    "static/js/main.af96439d.js"
+    "static/js/main.dc4c77a7.js"
   ]
 }
